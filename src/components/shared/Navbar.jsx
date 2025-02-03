@@ -36,7 +36,7 @@ function Navbar() {
   return (
     <div className="">
       <Container>
-        <div className="flex  fixed left-0 right-0 max-w-[1720px]  mx-auto py-8 items-center justify-between">
+        <div className="flex  fixed z-[99] left-0 right-0 max-w-[1720px]  mx-auto py-8 items-center justify-between">
           <div className="w-40">
             <Link to={"/"}>
               <img className="w-full " src={Logo} alt="" />

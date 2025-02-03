@@ -4,7 +4,7 @@ import Navbar from "../components/shared/Navbar"
 
 function MainLayout() {
   return (
-    <div>
+    <div className="font-poppins">
       <nav>
         <Navbar/>
       </nav>
