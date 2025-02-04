@@ -1,15 +1,105 @@
 import ReactStars from "react-rating-stars-component";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
-// import required modules
-import { Pagination } from "swiper/modules";
+import Container from "../../components/shared/Container";
 
 const Contact = () => {
+  const testimonials = [
+    {
+      id: 1,
+      name: "John Marshall",
+      title: "Customer Relationship Manager, XYZ Tech",
+      quote:
+        '" Using Duelert has increased customer patronage by a whooping 75%, our customers love these. "',
+      rating: 5,
+      date: "28 Nov",
+      avatar:
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dP1U4xqAjUdZyRVejKkHBGfAaA1YlS.png",
+    },
+    {
+      id: 2,
+      name: "John Marshall",
+      title: "Customer Relationship Manager, XYZ Tech",
+      quote:
+        '" Using Duelert has increased customer patronage by a whooping 75%, our customers love these. "',
+      rating: 5,
+      date: "28 Nov",
+      avatar:
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dP1U4xqAjUdZyRVejKkHBGfAaA1YlS.png",
+    },
+    {
+      id: 3,
+      name: "John Marshall",
+      title: "Customer Relationship Manager, XYZ Tech",
+      quote:
+        '" Using Duelert has increased customer patronage by a whooping 75%, our customers love these. "',
+      rating: 5,
+      date: "28 Nov",
+      avatar:
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dP1U4xqAjUdZyRVejKkHBGfAaA1YlS.png",
+    },
+    {
+      id: 4,
+      name: "John Marshall",
+      title: "Customer Relationship Manager, XYZ Tech",
+      quote:
+        '" Using Duelert has increased customer patronage by a whooping 75%, our customers love these. "',
+      rating: 5,
+      date: "28 Nov",
+      avatar:
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dP1U4xqAjUdZyRVejKkHBGfAaA1YlS.png",
+    },
+    {
+      id: 1,
+      name: "John Marshall",
+      title: "Customer Relationship Manager, XYZ Tech",
+      quote:
+        '" Using Duelert has increased customer patronage by a whooping 75%, our customers love these. "',
+      rating: 5,
+      date: "28 Nov",
+      avatar:
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dP1U4xqAjUdZyRVejKkHBGfAaA1YlS.png",
+    },
+    {
+      id: 2,
+      name: "John Marshall",
+      title: "Customer Relationship Manager, XYZ Tech",
+      quote:
+        '" Using Duelert has increased customer patronage by a whooping 75%, our customers love these. "',
+      rating: 5,
+      date: "28 Nov",
+      avatar:
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dP1U4xqAjUdZyRVejKkHBGfAaA1YlS.png",
+    },
+    {
+      id: 3,
+      name: "John Marshall",
+      title: "Customer Relationship Manager, XYZ Tech",
+      quote:
+        '" Using Duelert has increased customer patronage by a whooping 75%, our customers love these. "',
+      rating: 5,
+      date: "28 Nov",
+      avatar:
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dP1U4xqAjUdZyRVejKkHBGfAaA1YlS.png",
+    },
+    {
+      id: 4,
+      name: "John Marshall",
+      title: "Customer Relationship Manager, XYZ Tech",
+      quote:
+        '" Using Duelert has increased customer patronage by a whooping 75%, our customers love these. "',
+      rating: 5,
+      date: "28 Nov",
+      avatar:
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dP1U4xqAjUdZyRVejKkHBGfAaA1YlS.png",
+    },
+  ];
+
   return (
     <>
       <div className="pt-28"></div>
@@ -120,31 +210,30 @@ const Contact = () => {
         </>
 
         <>
-          <div className="max-w-[1720px]  mx-auto ">
+          <div className="max-w-[1720px]  mx-auto">
             <h2 className="text-center text-5xl font-semibold text-black001 mb-4">
               Testimonials
             </h2>
           </div>
-          <div className="mt-10 overflow-auto scrollbar-hide">
-            {/* <Container> */}
-            <Swiper
-              slidesPerView={"auto"}
-              centeredSlides={false}
-              spaceBetween={0}
-              pagination={{
-                clickable: true,
-                renderBullet: function (index, className) {
-                  return `<span class="${className} custom-bullet"></span>`;
-                },
-              }}
-              modules={[Pagination]}
-              className="testimonialSwiper"
-            >
-              {Array(12)
-                .fill(null)
-                .map((_, idx) => (
-                  <SwiperSlide key={idx}>
-                    <div className="px-5">
+          <div className="mt-10 overflow-hidden">
+            <Container>
+              <Swiper
+                slidesPerView={"auto"}
+                centeredSlides={false}
+                spaceBetween={30}
+                pagination={{
+                  clickable: true,
+                  renderBullet: function (index, className) {
+                    return `<span class="${className} custom-bullet"></span>`;
+                  },
+                }}
+                modules={[Pagination]}
+                className="testimonialSwiper !overflow-visible"
+              >
+                {Array(12)
+                  .fill(null)
+                  .map((_, idx) => (
+                    <SwiperSlide key={idx}>
                       <div
                         className="card bg-white p-[40px] rounded-lg w-[500px] mb-20 flex-shrink-0"
                         style={{
@@ -207,11 +296,10 @@ const Contact = () => {
                           </button>
                         </div>
                       </div>
-                    </div>
-                  </SwiperSlide>
-                ))}
-            </Swiper>
-            {/* </Container> */}
+                    </SwiperSlide>
+                  ))}
+              </Swiper>
+            </Container>
           </div>
         </>
       </section>
