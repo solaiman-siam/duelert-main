@@ -140,7 +140,7 @@ const Contact = () => {
               modules={[Pagination]}
               className="testimonialSwiper"
             >
-              {Array(20)
+              {Array(12)
                 .fill(null)
                 .map((_, idx) => (
                   <SwiperSlide key={idx}>

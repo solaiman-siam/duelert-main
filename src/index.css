@@ -15,6 +15,12 @@
 .testimonialSwiper .swiper-slide {
   width: fit-content !important;
 }
+.testimonialSwiper .swiper-slide:first-child {
+  padding-left: 50px;
+}
+.testimonialSwiper .swiper-slide:last-child {
+  padding-right: 50px;
+}
 /* .testimonialSwiper.swiper-backface-hidden{
   width: fit-content;
 }    */
