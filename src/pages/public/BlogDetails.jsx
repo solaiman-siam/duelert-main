@@ -21,7 +21,7 @@ const BlogDetails = () => {
       <div className="pt-28"></div>
       <figure className="w-full h-[740px] overflow-hidden relative">
         <img
-          src="https://i.ibb.co.com/5W98PBrg/blog-hero.png"
+          src="https://i.ibb.co.com/CpPSK8Kn/Blog-Details-Banner.png"
           className="w-full h-full object-cover object-center"
           alt=""
         />
