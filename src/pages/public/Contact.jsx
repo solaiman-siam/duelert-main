@@ -1,4 +1,7 @@
+
 import ReactStars from "react-rating-stars-component";
+import Container from "../../components/shared/Container";
+import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";

@@ -9,7 +9,7 @@ function WhyChooseUs() {
   return (
     <div className="py-24">
         <Container>
-            <div className="flex justify-center items-center flex-col">
+            <div className="flex  justify-center items-center flex-col">
             <CommonSubHead subhead={'Why choose us?'}/>
             <CommonHead head={'The Value we offer'}/>
             <p className="text-center text-description pt-4 w-6/12">Duelert is a calendar tool that alerts businesses of customers' birthday, vehicle renewal alerts and important schedules. It's also a great tool for reminding people of birthdays, anniversaries, appointments and more.</p>
