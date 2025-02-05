@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /* ============= */
 /* Scrollbar styles for the entire page */
 body {
@@ -35,3 +36,32 @@ body {
   color: white;
 }
 /* ============= */
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scrollbar-width: none; /* For Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+.testimonialSwiper .swiper-slide {
+  width: fit-content !important;
+}
+/* .testimonialSwiper.swiper-backface-hidden{
+  width: fit-content;
+}    */
+
+.testimonialSwiper .swiper-pagination-bullet {
+  width: 15px  !important;
+  height: 15px  !important;
+  background: #f3a1a1  !important;
+  opacity: 1  !important;
+  transition: all 0.3s ease;
+}
+
+.testimonialSwiper .swiper-pagination-bullet-active {
+  background: #ed1c24 !important;
+  transform: scale(1.2) !important;
+}
+

@@ -11,6 +11,8 @@ export default {
       },
       colors: {
         primary: '#F41435',
+        black001: '#222F3E',
+        primaryDescription: '#5A5C5F',
         heading: '#222F3E',
         description: '#353B48'
       }
