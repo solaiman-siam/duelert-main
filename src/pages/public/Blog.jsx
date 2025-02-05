@@ -29,6 +29,9 @@ const Blog = () => {
           className="overlay absolute top-0 left-0 h-full w-full"
           style={{
             backgroundImage: "url('https://i.ibb.co/kkXsdyt/blog-overlay.png')",
+            "background-size": "cover",
+            "background-position": "center",
+            "background-repeat": "no-repeat",
           }}
         ></div>
         <h1 className=" absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-white text-[96px] font-bold leading-[96px] uppercase">

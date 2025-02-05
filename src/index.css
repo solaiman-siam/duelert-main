@@ -48,9 +48,16 @@ body {
 .testimonialSwiper .swiper-slide {
   width: fit-content !important;
 }
-/* .testimonialSwiper.swiper-backface-hidden{
-  width: fit-content;
-}    */
+/* .testimonialSwiper .swiper-slide:first-child {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.testimonialSwiper .swiper-slide:first-child {
+  padding-left: 0px;
+}
+.testimonialSwiper .swiper-slide:last-child {
+  padding-right: 0px;
+} */
 
 .testimonialSwiper .swiper-pagination-bullet {
   width: 15px  !important;
