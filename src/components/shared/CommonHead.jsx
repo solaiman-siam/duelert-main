@@ -1,8 +1,8 @@
 
 
-function CommonHead({head}) {
+function CommonHead({head , className}) {
   return (
-    <h2 className="text-4xl text-heading py-2 text-center font-semibold">
+    <h2 className={`text-4xl ${className} text-heading py-2 text-center font-semibold`}>
         {head}
     </h2>
   )
