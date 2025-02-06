@@ -29,9 +29,9 @@ const Blog = () => {
           className="overlay absolute top-0 left-0 h-full w-full"
           style={{
             backgroundImage: "url('https://i.ibb.co/kkXsdyt/blog-overlay.png')",
-            "background-size": "cover",
-            "background-position": "center",
-            "background-repeat": "no-repeat",
+            "backgroundSize": "cover",
+            "backgroundPosition": "center",
+            "backgroundRepeat": "no-repeat",
           }}
         ></div>
         <h1 className=" absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-white text-[96px] font-bold leading-[96px] uppercase">
@@ -77,12 +77,12 @@ const Blog = () => {
                     </div>
                     <Link
                       to={"/blog-details"}
-                      className="text-primary font-medium inline-flex gap-2 justify-center p-3 border border-primary group hover:bg-primary hover:text-white transition-all duration-300 rounded-full w-full"
+                      className="group text-primary font-medium inline-flex gap-1 justify-center p-3 border border-primary group hover:bg-primary hover:text-white transition-all duration-300 rounded-full w-full"
                     >
                       Read More{" "}
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="size-6 fill-primary group-hover:fill-white transition-all duration-300"
+                        className="size-6 fill-primary group-hover:fill-white transition-all duration-300 group-hover:translate-x-2 group-hover:-translate-y-1"
                         viewBox="0 0 24 24"
                         fill="none"
                       >
