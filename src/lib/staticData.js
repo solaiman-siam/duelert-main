@@ -98,3 +98,95 @@ export const pricingData = [
     "mostPopular": true
   }
 ]
+
+
+export const testimonialsData = [
+  {
+    id: 1,
+    name: "John Marshall",
+    title: "Customer Relationship Manager, XYZ Tech",
+    quote:
+      '" Using Duelert has increased customer patronage by a whooping 75%, our customers love these. "',
+    rating: 5,
+    date: "28 Nov",
+    avatar:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dP1U4xqAjUdZyRVejKkHBGfAaA1YlS.png",
+  },
+  {
+    id: 2,
+    name: "John Marshall",
+    title: "Customer Relationship Manager, XYZ Tech",
+    quote:
+      '" Using Duelert has increased customer patronage by a whooping 75%, our customers love these. "',
+    rating: 5,
+    date: "28 Nov",
+    avatar:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dP1U4xqAjUdZyRVejKkHBGfAaA1YlS.png",
+  },
+  {
+    id: 3,
+    name: "John Marshall",
+    title: "Customer Relationship Manager, XYZ Tech",
+    quote:
+      '" Using Duelert has increased customer patronage by a whooping 75%, our customers love these. "',
+    rating: 5,
+    date: "28 Nov",
+    avatar:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dP1U4xqAjUdZyRVejKkHBGfAaA1YlS.png",
+  },
+  {
+    id: 4,
+    name: "John Marshall",
+    title: "Customer Relationship Manager, XYZ Tech",
+    quote:
+      '" Using Duelert has increased customer patronage by a whooping 75%, our customers love these. "',
+    rating: 5,
+    date: "28 Nov",
+    avatar:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dP1U4xqAjUdZyRVejKkHBGfAaA1YlS.png",
+  },
+  {
+    id: 1,
+    name: "John Marshall",
+    title: "Customer Relationship Manager, XYZ Tech",
+    quote:
+      '" Using Duelert has increased customer patronage by a whooping 75%, our customers love these. "',
+    rating: 5,
+    date: "28 Nov",
+    avatar:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dP1U4xqAjUdZyRVejKkHBGfAaA1YlS.png",
+  },
+  {
+    id: 2,
+    name: "John Marshall",
+    title: "Customer Relationship Manager, XYZ Tech",
+    quote:
+      '" Using Duelert has increased customer patronage by a whooping 75%, our customers love these. "',
+    rating: 5,
+    date: "28 Nov",
+    avatar:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dP1U4xqAjUdZyRVejKkHBGfAaA1YlS.png",
+  },
+  {
+    id: 3,
+    name: "John Marshall",
+    title: "Customer Relationship Manager, XYZ Tech",
+    quote:
+      '" Using Duelert has increased customer patronage by a whooping 75%, our customers love these. "',
+    rating: 5,
+    date: "28 Nov",
+    avatar:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dP1U4xqAjUdZyRVejKkHBGfAaA1YlS.png",
+  },
+  {
+    id: 4,
+    name: "John Marshall",
+    title: "Customer Relationship Manager, XYZ Tech",
+    quote:
+      '" Using Duelert has increased customer patronage by a whooping 75%, our customers love these. "',
+    rating: 5,
+    date: "28 Nov",
+    avatar:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dP1U4xqAjUdZyRVejKkHBGfAaA1YlS.png",
+  },
+];
