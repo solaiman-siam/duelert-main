@@ -29,9 +29,9 @@ const BlogDetails = () => {
           className="overlay absolute top-0 left-0 h-full w-full opacity-0"
           style={{
             backgroundImage: "url('https://i.ibb.co/kkXsdyt/blog-overlay.png')",
-            "background-size": "cover",
-            "background-position": "center",
-            "background-repeat": "no-repeat",
+            "backgroundSize": "cover",
+            "backgroundPosition": "center",
+            "backgroundRepeat": "no-repeat",
           }}
         ></div>
         <h1 className=" absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-white text-[96px] font-bold leading-[96px] uppercase">
@@ -54,7 +54,7 @@ const BlogDetails = () => {
             <div className="w-px bg-[#00000080]"></div>
             <p className="text-2xl">1 min ago</p>
           </div>
-          <h3 className="text-5xl mb-9 font-medium">{blog.title}</h3>
+          <h3 className="text-5xl mb-9 font-medium text-black001">{blog.title}</h3>
           <div className="flex items-center gap-12 mb-12">
             <p className="text-primaryDescription text-2xl">
               Data:{" "}
@@ -65,7 +65,7 @@ const BlogDetails = () => {
               <span className="text-[#050505] font-medium">{blog.time}</span>
             </p>
           </div>
-          <div className="text-2xl w-[80%] space-y-12 mb-[138px]">
+          <div className="text-2xl w-[80%] space-y-12 mb-[138px] text-black001">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               ligula nibh, interdum non enim sit amet, iaculis aliquet nunc.
@@ -136,12 +136,12 @@ const BlogDetails = () => {
                       </div>
                       <Link
                         to={"/blog-details"}
-                        className="text-primary font-medium inline-flex gap-2 justify-center p-3 border border-primary group hover:bg-primary hover:text-white transition-all duration-300 rounded-full w-full"
+                        className="group text-primary font-medium inline-flex gap-1 justify-center p-3 border border-primary group hover:bg-primary hover:text-white transition-all duration-300 rounded-full w-full"
                       >
                         Read More{" "}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          className="size-6 fill-primary group-hover:fill-white transition-all duration-300"
+                          className="size-6 fill-primary group-hover:fill-white transition-all duration-300 group-hover:translate-x-2 group-hover:-translate-y-1"
                           viewBox="0 0 24 24"
                           fill="none"
                         >
@@ -152,14 +152,13 @@ const BlogDetails = () => {
                   </div>
                 ))}
             </div>
-            <div className="text-center">
-              <button
-                type="button"
-                className="text-white font-medium text-lg px-14 py-4 bg-primary rounded-lg"
-              >
-                View more
-              </button>
-            </div>
+            <Link
+              to="/blog"
+              type="button"
+              className="text-primary hover:text-white font-medium text-lg px-14 py-4 hover:bg-primary border-2 border-primary transition-all duration-300 rounded-lg block w-fit mx-auto"
+            >
+              View more
+            </Link>
           </div>
         </div>
       </section>
