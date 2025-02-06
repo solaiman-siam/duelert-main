@@ -4,6 +4,8 @@ import Footer from "../components/shared/Footer"
 import { ScrollRestoration } from "react-router/dist/development"
 
 
+
+
 function MainLayout() {
   return (
     <div className="font-poppins ">
