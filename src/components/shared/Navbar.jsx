@@ -13,7 +13,7 @@ function Navbar() {
     },
     {
       name: "About",
-      path: "/about",
+      path: "/about-us",
     },
     {
       name: "Pricing",
@@ -34,9 +34,10 @@ function Navbar() {
   };
 
   return (
-    <div className="">
+    <div className=" bg-green-500  z-[120]">
+      <div className="bg-white">
       <Container>
-        <div className="flex  fixed z-[99] left-0 right-0 max-w-[1720px]  mx-auto py-8 items-center justify-between">
+        <div className="flex   fixed z-[99]  left-0 right-0 max-w-[1720px]  mx-auto py-8 items-center justify-between">
           <div className="w-40">
             <Link to={"/"}>
               <img className="w-full " src={Logo} alt="" />
@@ -65,6 +66,7 @@ function Navbar() {
           </div>
         </div>
       </Container>
+      </div>
     </div>
   );
 }
