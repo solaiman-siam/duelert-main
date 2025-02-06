@@ -15,14 +15,10 @@ function AboutUs() {
             <OurMission/>
             <OurNumbers/>
             <Testimonial/>
-            
-
-
-
             {/* <img src="" alt="" />
             <img src="" alt="" /> */}
 
-            <img className="absolute" src={PageTopVector} alt="" />
+            <img className="absolute bottom-12 left-0" src={PageTopVector} alt="" />
 
             <img className="w-full h-full z-[-2] object-cover top-0 left-0 absolute" src={AboutGradient} alt="" />
 

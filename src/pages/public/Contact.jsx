@@ -1,9 +1,20 @@
+import ReactStars from "react-rating-stars-component";
+import Container from "../../components/shared/Container";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
 
-
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
 import Testimonial from "../../components/contact-sections/Testimonial";
 
 const Contact = () => {
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(e.target.fullName.value, e.target.yourLove.value, e.target.message.value);
+  };
 
   return (
     <>
@@ -18,9 +29,9 @@ const Contact = () => {
           className="overlay absolute top-0 left-0 h-full w-full"
           style={{
             backgroundImage: "url('https://i.ibb.co/kkXsdyt/blog-overlay.png')",
-            "background-size": "cover",
-            "background-position": "center",
-            "background-repeat": "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
           }}
         ></div>
         <h1 className=" absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-white text-[96px] font-bold leading-[96px] uppercase">
@@ -32,22 +43,82 @@ const Contact = () => {
         className="py-32"
         style={{
           background:
-            "url('https://i.ibb.co.com/jkkTmVwZ/blogbg-1.png') no-repeat",
+            "url('https://i.ibb.co.com/b5ZVydM4/image-19.png') no-repeat",
           backgroundSize: "cover",
         }}
       >
         <>
-          <div className="pb-32 max-w-[1720px]  mx-auto flex gap-10">
+          <div className="pb-32 max-w-[1720px] mx-auto flex gap-28">
             <div className="left flex-1">
               <h2 className="text-5xl font-semibold text-black001 mb-4">
                 Say Hi!
               </h2>
-              <p className="text-2xl text-description mb-8">
+              <p className="text-2xl text-description mb-10">
                 We’d like to talk with you.
               </p>
+              <form onSubmit={handleSubmit} className="">
+                <fieldset className="space-y-2 mb-7">
+                  <label
+                    htmlFor="fullName"
+                    className="text-black001 font-semibold text-xl"
+                  >
+                    My name is
+                  </label>
+                  <input
+                    id="fullName"
+                    type="text"
+                    name="fullName"
+                    placeholder="Full Name"
+                    className="w-full p-4 rounded-lg bg-white focus:outline-primary focus-visible:outline-primary"
+                  />
+                </fieldset>
+                <fieldset className="space-y-2 mb-7">
+                  <label
+                    htmlFor="yourLove"
+                    className="text-black001 font-semibold text-xl"
+                  >
+                    I’m looking for
+                  </label>
+                  <input
+                    id="yourLove"
+                    type="text"
+                    name="yourLove"
+                    placeholder="What you love"
+                    className="w-full p-4 rounded-lg bg-white focus:outline-primary focus-visible:outline-primary"
+                  />
+                </fieldset>
+
+                <fieldset className="space-y-2 mb-10">
+                  <label
+                    htmlFor="message"
+                    className="text-black001 font-semibold text-xl"
+                  >
+                    Your message
+                  </label>
+                  <textarea
+                    id="message"
+                    type="text"
+                    name="message"
+                    placeholder="I want to say that..."
+                    className="w-full p-4 rounded-lg bg-white h-[180px] focus:outline-primary focus-visible:outline-primary"
+                  />
+                </fieldset>
+
+                <button
+                  type="submit"
+                  className="text-white py-4 px-10 bg-primary font-bold rounded-lg w-fit"
+                  style={{
+                    boxShadow:
+                      "0px 4.8px 8.4px -1.2px rgba(0, 0, 0, 0.11), 0px 2.4px 4.8px -1.2px rgba(0, 0, 0, 0.07)",
+                  }}
+                >
+                  SEND MESSAGE
+                </button>
+              </form>
             </div>
+
             <div className="right flex-1 relative">
-              <figure className="h-[640px] w-full rounded-lg overflow-hidden">
+              <figure className="h-[695px] w-full rounded-lg overflow-hidden">
                 <img
                   src="https://i.ibb.co.com/4RJHKH8C/smiling.png"
                   className="h-full w-full object-cover object-center"
@@ -91,7 +162,7 @@ const Contact = () => {
                         fill="white"
                       />
                     </svg>
-                    hello@creative-tim.com
+                    mailto:hello@creative-tim.com
                   </p>
                   <p className=" inline-flex gap-3 items-center text-xl">
                     <svg
@@ -113,10 +184,8 @@ const Contact = () => {
             </div>
           </div>
         </>
-
-        <>
-         <Testimonial/>
-        </>
+        <Testimonial/>
+        
       </section>
     </>
   );
