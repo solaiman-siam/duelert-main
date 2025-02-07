@@ -6,7 +6,7 @@ function MainLayout() {
   return (  
     <div className="font-poppins ">
       <ScrollRestoration/>
-      <nav>
+      <nav className="">
         <Navbar/>
       </nav>
         <Outlet/>

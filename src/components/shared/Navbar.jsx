@@ -34,11 +34,12 @@ function Navbar() {
   };
 
   return (
-    <div className=" bg-green-500  z-[120]">
-      <div className="bg-white">
+    <div className=" ">
+      <div className="">
       <Container>
-        <div className="flex   fixed z-[99]  left-0 right-0 max-w-[1720px]  mx-auto py-8 items-center justify-between">
-          <div className="w-40">
+        <div className=" bg-white  fixed z-[99]  left-0 right-0   ">
+         <div className="max-w-[1620px] flex mx-auto py-6 items-center justify-between">
+         <div className="w-40">
             <Link to={"/"}>
               <img className="w-full " src={Logo} alt="" />
             </Link>
@@ -64,6 +65,7 @@ function Navbar() {
               </button>
             </div>
           </div>
+         </div>
         </div>
       </Container>
       </div>
