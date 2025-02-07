@@ -18,7 +18,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className="pt-28"></div>
+      <div className=""></div>
       <figure className="w-full h-[740px] overflow-hidden relative">
         <img
           src="https://i.ibb.co.com/V0jjZFHM/Contact-Banner.png"

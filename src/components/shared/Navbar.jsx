@@ -51,7 +51,7 @@ function Navbar() {
                   <h4
                     onClick={() => handleActiveLink(link, index)}
                     className={`text-md px-4 py-2 font-poppins ${
-                      index === activeIndex ? "text-primary " : ""
+                      index === activeIndex ? "text-primary border-b border-primary bg-gradient-to-b from-transparent to-primary/5" : "border-b border-white bg-gradient-to-b hover:bg-gradient-to-b  hover:from-transparent hover:to-primary/5"
                     }`}
                   >
                     {link?.name}
@@ -59,11 +59,11 @@ function Navbar() {
                 </Link>
               ))}
             </div>
-            <div>
+            <Link to={'/register'}>
               <button className="px-8 font-medium text-white bg-primary py-2.5 rounded-md bg-">
                 Sign up now
               </button>
-            </div>
+            </Link>
           </div>
          </div>
         </div>

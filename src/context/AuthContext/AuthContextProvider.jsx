@@ -1,9 +1,9 @@
 
 
-function AuthContextProvider() {
+function AuthContextProvider({children}) {
   return (
     <div>
-        
+        {children}
     </div>
   )
 }

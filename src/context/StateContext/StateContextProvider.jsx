@@ -1,8 +1,10 @@
 
 
-function StateContextProvider() {
+function StateContextProvider({children}) {
   return (
-    <div>StateContextProvider</div>
+    <div>
+      {children}
+    </div>
   )
 }
 
