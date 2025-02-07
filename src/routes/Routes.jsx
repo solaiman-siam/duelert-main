@@ -10,6 +10,8 @@ import PricingPage from "../pages/public/PricingPage";
 import Login from "../pages/auth/Register";
 import Register from "../pages/auth/Login";
 import PageTitle from "../components/shared/PageTitle";
+import ClientDashbaord from "../layouts/ClientDashbaord";
+import ClientHome from "../pages/client-dashboard/ClientHome";
 
 
 export const router = createBrowserRouter([
@@ -84,5 +86,16 @@ export const router = createBrowserRouter([
             },
         ]
         
+    },
+    {
+        path: '/client',
+        element: <ClientDashbaord/>,
+        errorElement: <Error/>,
+        children: [
+            {
+                index: true,
+                element: <ClientHome/>
+            }
+        ]
     }
 ])
