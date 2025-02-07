@@ -6,6 +6,7 @@ import Blog from "../pages/public/Blog";
 import BlogDetails from "../pages/public/BlogDetails";
 import Contact from "../pages/public/Contact";
 import AboutUs from "../pages/public/AboutUs";
+import PricingPage from "../pages/public/PricingPage";
 
 
 export const router = createBrowserRouter([
@@ -33,6 +34,10 @@ export const router = createBrowserRouter([
             {
                 path: "/about-us",
                 element: <AboutUs/>
+            },
+            {
+                path: "/pricing",
+                element: <PricingPage/>
             },
         ]
         

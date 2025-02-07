@@ -179,7 +179,7 @@ const Contact = () => {
                     </svg>
                     Dyonisie Wolf Bucharest, RO 010458
                   </p>
-                </div>
+                </div>                                                                                                                                                          
               </div>
             </div>
           </div>

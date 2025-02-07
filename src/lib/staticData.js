@@ -190,3 +190,32 @@ export const testimonialsData = [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dP1U4xqAjUdZyRVejKkHBGfAaA1YlS.png",
   },
 ];
+
+export const qnaData = [
+  {
+    "id": 1,
+    "question": "What data sources are used?",
+    "answer": "The Areainsight platform aggregates and analyzes data from a variety of trusted and authoritative sources to provide comprehensive, up-to-date, and reliable neighborhood insights. The Areainsight platform aggregates and analyzes data from a variety of trusted and authoritative sources to provide comprehensive, up-to-date, and reliable neighborhood insights. The Areainsight platform aggregates and analyzes data from a variety of trusted and authoritative sources to provide comprehensive, up-to-date, and reliable neighborhood insights."
+  },
+  {
+    "id": 2,
+    "question": "How current is the data?",
+    "answer": "The data is regularly updated to ensure that it remains current and reflects the latest neighborhood trends and insights. The Areainsight platform aggregates and analyzes data from a variety of trusted and authoritative sources to provide comprehensive, up-to-date, and reliable neighborhood insights. The Areainsight platform aggregates and analyzes data from a variety of trusted and authoritative sources to provide comprehensive, up-to-date, and reliable neighborhood insights."
+  },
+  {
+    "id": 3,
+    "question": "Which neighborhoods are covered?",
+    "answer": "The platform covers a wide range of neighborhoods across urban and suburban areas, providing comprehensive insights regardless of location. The Areainsight platform aggregates and analyzes data from a variety of trusted and authoritative sources to provide comprehensive, up-to-date, and reliable neighborhood insights."
+  },
+  {
+    "id": 4,
+    "question": "How often is the data updated?",
+    "answer": "Data updates occur on a daily, weekly, or monthly basis, depending on the data source and the type of information being tracked. The Areainsight platform aggregates and analyzes data from a variety of trusted and authoritative sources to provide comprehensive, up-to-date, and reliable neighborhood insights."
+  },
+  {
+    "id": 5,
+    "question": "What makes a neighborhood livable?",
+    "answer": "A livable neighborhood typically offers a balance of safety, accessibility, amenities, green spaces, and a strong sense of community."
+  }
+]
+
