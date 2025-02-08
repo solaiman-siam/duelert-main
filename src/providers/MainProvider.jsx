@@ -1,9 +1,10 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import AuthContextProvider from "../context/authContext/AuthContextProvider";
+
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 import StateContextProvider from "../context/StateContext/StateContextProvider";
 import { HelmetProvider } from "react-helmet-async";
+import AuthContextProvider from "../context/AuthContext/AuthContextProvider";
 
 const queryClient = new QueryClient();
 
