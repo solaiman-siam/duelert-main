@@ -11,7 +11,11 @@ import Login from "../pages/auth/Register";
 import Register from "../pages/auth/Login";
 import PageTitle from "../components/shared/PageTitle";
 import ClientDashbaord from "../layouts/ClientDashbaord";
-import ClientHome from "../pages/client-dashboard/ClientHome";
+import Calender from "../pages/client-dashboard/Calender";
+import Pricing from "../pages/client-dashboard/Pricing";
+import Contacts from "../pages/client-dashboard/Contacts";
+import Reminders from "../pages/client-dashboard/Reminders";
+import Support from "../pages/client-dashboard/Support";
 
 
 export const router = createBrowserRouter([
@@ -94,8 +98,24 @@ export const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <ClientHome/>
-            }
+                element: <Calender/>
+            },
+            {
+                path: '/client/pricing',
+                element: <Pricing/>
+            },
+            {
+              path: '/client/contact',
+                element: <Contacts/>
+            },
+            {
+              path: '/client/reminder',
+                element: <Reminders/>
+            },
+            {
+              path: '/client/support',
+                element: <Support/>
+            },
         ]
     }
 ])
