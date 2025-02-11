@@ -72,3 +72,15 @@ body {
   transform: scale(1.2) !important;
 }
 
+
+.contacts-table tr {
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+}
+.contacts-table tr:nth-child(odd) {
+  background: #FFF0F2 !important;
+}
+.contacts-table tr:hover {
+  background: #FFF0F2 !important;
+}
+

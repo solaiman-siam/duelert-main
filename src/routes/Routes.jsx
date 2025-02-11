@@ -10,7 +10,7 @@ import PricingPage from "../pages/public/PricingPage";
 import Login from "../pages/auth/Register";
 import Register from "../pages/auth/Login";
 import PageTitle from "../components/shared/PageTitle";
-import ClientDashbaord from "../layouts/ClientDashbaord";
+import ClientDashboard from "../layouts/ClientDashbaord";
 import Calender from "../pages/client-dashboard/Calender";
 import Pricing from "../pages/client-dashboard/Pricing";
 import Contacts from "../pages/client-dashboard/Contacts";
@@ -93,7 +93,7 @@ export const router = createBrowserRouter([
     },
     {
         path: '/client',
-        element: <ClientDashbaord/>,
+        element: <ClientDashboard/>,
         errorElement: <Error/>,
         children: [
             {
