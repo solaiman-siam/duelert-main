@@ -62,7 +62,7 @@ function Sidebar() {
                   to={`/client${menu.path}`}
                   onClick={() => handleMenu(index)}
                   key={menu.name}
-                  className={`flex  py-3  cursor-pointer px-4   items-center gap-2 ${
+                  className={`flex  py-3  cursor-pointer px-4   items-center gap-2 rounded-lg ${
                     activeTab === index ? "bg-primary/20    text-white " : ""
                   }`}
                 >

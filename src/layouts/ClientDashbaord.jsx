@@ -2,7 +2,9 @@ import { Outlet } from "react-router";
 import Navbar from "../components/client-dashboard/Navbar";
 import Sidebar from "../components/client-dashboard/Sidebar";
 
-function ClientDashbaord() {
+
+
+function ClientDashboard() {
   return (
     <div className="font-poppins">
       <div className="w-full flex ">
@@ -12,7 +14,7 @@ function ClientDashbaord() {
             <Navbar name={"Dashboard"} />
           </div>
           {/* pages content here */}
-          <div className="p-4 mt-28 rounded-md ">
+          <div className="p-8 mt-28 rounded-md ">
             <Outlet />
           </div>
         </div>
@@ -21,4 +23,4 @@ function ClientDashbaord() {
   );
 }
 
-export default ClientDashbaord;
+export default ClientDashboard;

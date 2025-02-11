@@ -195,7 +195,7 @@ export const qnaData = [
   {
     "id": 1,
     "question": "What data sources are used?",
-    "answer": "The Areainsight platform aggregates and analyzes data from a variety of trusted and authoritative sources to provide comprehensive, up-to-date, and reliable neighborhood insights. The Areainsight platform aggregates and analyzes data from a variety of trusted and authoritative sources to provide comprehensive, up-to-date, and reliable neighborhood insights. The Areainsight platform aggregates and analyzes data from a variety of trusted and authoritative sources to provide comprehensive, up-to-date, and reliable neighborhood insights."
+    "answer": "The Areainsight platform aggregates and analyzes data from a variety of trusted and authoritative sources to provide comprehensive, up-to-date, and reliable neighborhood insights. The Areainsight platform aggregates and analyzes data from a variety of trusted and authoritative sources to provide comprehensive, up-to-date, and reliable neighborhood insights. The Areainsight platform aggregates and analyzes data from a variety of trusted and authoritative sources."
   },
   {
     "id": 2,

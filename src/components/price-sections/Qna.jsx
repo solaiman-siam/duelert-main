@@ -5,6 +5,7 @@ import Container from "../shared/Container";
 import { Collapse, Typography } from "antd";
 import CollapsePanel from "antd/es/collapse/CollapsePanel";
 import { qnaData } from "../../lib/staticData";
+import { useState } from "react";
 const text = `
  The AreaInsight platform aggregates and analyzes data from a variety of trusted and authoritative sources to provide comprehensive, up-to-date, and reliable neighborhood insights.
 `;
@@ -12,7 +13,10 @@ const text = `
 function Qna() {
   const onChange = (key) => {
     console.log(key);
+    setActiveKey(key);
   };
+
+  const [activeKey, setActiveKey] = useState(1);
 
   const items = [
     {
@@ -28,20 +32,21 @@ function Qna() {
       showArrow: true,
     },
   ];
+
   return (
-    <div className="py-24">
+    <div className="">
       <Container>
         <div>
           <CommonSubHead subhead={"FAQ"} />
           <CommonHead head={"Frequently Asked Question"} />
-
+          {/* Accordion */}
           <div className="py-10">
             <Collapse
-            destroyInactivePanel={true}
+              destroyInactivePanel={true}
               expandIconPosition="right"
               expandIcon={({ isActive }) => {
                 return isActive ? (
-                  <div className="border border-black translate-y-1/2 bg-black  rounded-full p-px">
+                  <div className="border border-primary translate-y-1/2 bg-primary  rounded-full p-px">
                     <Minus rotate={90} color="white" />
                   </div>
                 ) : (
@@ -51,24 +56,26 @@ function Qna() {
                 );
               }}
               accordion={true}
-              defaultActiveKey={["1"]}
+              activeKey={activeKey}
               onChange={onChange}
-              
             >
-              {
-                qnaData.map((qna, index) => <CollapsePanel key={qna.id} header={<h2 className="font-semibold font-inter text-xl py-4 px-2">{ `${index + 1}.${qna?.question}` }</h2>}>
+              {qnaData.map((qna, index) => (
+                <CollapsePanel
+                  key={qna.id}
+                  header={
+                    <h2
+                      className={`font-semibold font-inter text-xl py-4 px-2`}
+                    >{`${index + 1}.${qna?.question}`}</h2>
+                  }
+                  className={`${qna.id == activeKey ? "bg-white" : "bg-transparent"} transition-all duration-300`}
+                >
                   <Typography.Text>
                     <div className="px-2 font-inter">
-                      <p className="font-medium  text-base">
-                      {qna?.answer}
-                      </p>
+                      <p className="font-medium  text-base">{qna?.answer}</p>
                     </div>
                   </Typography.Text>
-                </CollapsePanel>)
-              }
-              
-              
-
+                </CollapsePanel>
+              ))}
             </Collapse>
           </div>
         </div>
