@@ -3,15 +3,16 @@ import CommonHead from "../shared/CommonHead";
 import Container from "../shared/Container";
 import PricingCard from "./PricingCard";
 
-function Pricing() {
+function PricingSection({isTitle, className}) {
   return (
-    <div className="py-24">
+    <div className={` ${className}`}>
       <Container>
         <div className="w-full">
-          <div className="flex w-full items-center justify-center flex-col gap-2">
+          {isTitle && <div className="flex w-full items-center justify-center flex-col gap-2">
             <CommonHead head={"Pricing"} />
             <p className="text-description w-5/12 text-center">Choose best plan what works for you</p>
-          </div>
+          </div>}
+          
 
           <div className="grid grid-cols-3 gap-14 pt-14">
             {
@@ -26,4 +27,4 @@ function Pricing() {
   );
 }
 
-export default Pricing;
+export default PricingSection;

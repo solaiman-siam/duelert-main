@@ -1,12 +1,12 @@
-import Pricing from "../../components/home-sections/Pricing"
 
 import BgImage from '../../assets/images/background-gradient.png'
 import Qna from "../../components/price-sections/Qna"
+import PricingSection from "../../components/home-sections/PricingSection"
 
 function PricingPage() {
   return (
     <div className="relative ">
-      <Pricing/>
+      <PricingSection isTitle={true} className={'py-24'}/>
       <Qna/>
       
 

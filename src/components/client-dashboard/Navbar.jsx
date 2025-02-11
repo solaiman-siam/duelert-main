@@ -2,7 +2,7 @@ import { IoNotifications } from "react-icons/io5";
 
 function Navbar({name}) {
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex  justify-between items-center">
       <div><h3 className="text-4xl font-medium">{name}</h3></div>
       <div className="flex items-center gap-8">
         <div className="cursor-pointer">
