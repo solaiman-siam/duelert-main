@@ -190,9 +190,22 @@ function Contacts() {
     },
   ];
 
+  const components = {
+    header: {
+      cell: (props) => (
+        <th
+          {...props}
+          className="!bg-[#FFDEE3] p-4 !font-poppins !font-semibold !uppercase"
+        >
+          {props.children}
+        </th>
+      ),
+    },
+  };
+
   return (
     <div className="contacts-table">
-      <Table dataSource={dataSource} columns={columns}></Table>
+      <Table components={components} dataSource={dataSource} columns={columns}></Table>
     </div>
   );
 }

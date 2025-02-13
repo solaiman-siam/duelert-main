@@ -40,7 +40,7 @@ function Qna() {
           <CommonSubHead subhead={"FAQ"} />
           <CommonHead head={"Frequently Asked Question"} />
           {/* Accordion */}
-          <div className="py-10">
+          <div className="py-8">
             <Collapse
               destroyInactivePanel={true}
               expandIconPosition="right"
