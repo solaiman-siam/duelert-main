@@ -35,5 +35,5 @@ A web-based application designed to schedule employee and customer birthdays wit
 
 ### **1️⃣ Clone the Repository**
 ```sh
-git clone 
+git clone https://github.com/solaiman-siam/duelert-main.git
 cd employee-birthday-scheduler
