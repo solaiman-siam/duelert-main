@@ -14,8 +14,9 @@ import ClientDashboard from "../layouts/ClientDashbaord";
 import Calender from "../pages/client-dashboard/Calender";
 import Pricing from "../pages/client-dashboard/Pricing";
 import Contacts from "../pages/client-dashboard/Contacts";
-import Reminders from "../pages/client-dashboard/Reminders";
+// import Reminders from "../pages/client-dashboard/Reminders";
 import Support from "../pages/client-dashboard/Support";
+import Bulk from "../pages/client-dashboard/Bulk";
 
 
 export const router = createBrowserRouter([
@@ -110,7 +111,7 @@ export const router = createBrowserRouter([
             },
             {
               path: '/client/reminder',
-                element: <Reminders/>
+                element: <Bulk/>
             },
             {
               path: '/client/support',
