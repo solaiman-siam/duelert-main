@@ -77,10 +77,18 @@ body {
   margin-top: 8px !important;
   margin-bottom: 8px !important;
 }
-.contacts-table tr:nth-child(odd) {
+.contacts-table tr:nth-child(even) {
   background: #FFF0F2 !important;
 }
 .contacts-table tr:hover {
   background: #FFF0F2 !important;
+}
+
+
+.birthday-reminder .ant-segmented-group{
+  gap: 12px;
+}
+.birthday-reminder .ant-segmented-item-label{
+  padding: 10px 20px;
 }
 
