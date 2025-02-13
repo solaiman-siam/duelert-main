@@ -86,7 +86,7 @@ const BulkScheduleForm = () => {
             onClick={() => setRecipients((prev) => prev + 1)}
             className="text-lg font-semibold px-8 py-4 text-white bg-primary rounded-lg mt-5"
           >
-            SUBMITAdd more recipient +
+            Add more recipient +
           </button>
         </div>
 
