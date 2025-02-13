@@ -91,4 +91,15 @@ body {
 .birthday-reminder .ant-segmented-item-label{
   padding: 10px 20px;
 }
+.birthday-reminder .ant-select-arrow{
+  right: 20px;
+}
+
+.birthday-reminder .ant-select-selector{
+  padding: 0px 20px !important;
+}
+
+:where(.css-dev-only-do-not-override-14j6e0e).ant-picker,:where(.css-dev-only-do-not-override-14j6e0e).ant-select-single{
+  font-family: poppins;
+}
 
