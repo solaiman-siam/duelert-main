@@ -7,7 +7,7 @@ function Support() {
   };
 
   return (
-    <div className="">
+    <div className="p-8">
       <h2 className="text-3xl font-medium">Get in touch with us</h2>
       <div className="grid grid-cols-3 gap-10">
         <div className="">

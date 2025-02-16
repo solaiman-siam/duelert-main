@@ -103,7 +103,13 @@ body {
   font-family: poppins;
 }
 
-
+.message-template-drawer .ant-drawer-content-wrapper{
+  box-shadow: none;
+  height: 80vh !important;
+}
+.message-template-drawer .ant-drawer-body{
+  padding: 50px 100px;
+}
 
 /* rbc styles */
 
@@ -141,3 +147,4 @@ body {
   border-radius: 20px !important;
 
 }
+

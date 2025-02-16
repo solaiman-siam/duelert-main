@@ -6,7 +6,7 @@ import Sidebar from "../components/client-dashboard/Sidebar";
 
 function ClientDashboard() {
   return (
-    <div className="font-poppins overflow-y-scroll">
+    <div className="font-poppins">
       <div className="w-full flex ">
         <Sidebar />
         <div className="flex-1 ml-[16%] min-h-screen bg-gradient-to-b from-[#F7FAF3] to-[#FAECE3]">
@@ -14,7 +14,7 @@ function ClientDashboard() {
             <Navbar name={"Dashboard"} />
           </div>
           {/* pages content here */}
-          <div className="p-8 mt-[100px] rounded-md ">
+          <div className="mt-[100px] rounded-md ">
             <Outlet />
           </div>
         </div>

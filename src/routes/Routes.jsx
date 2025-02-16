@@ -17,6 +17,7 @@ import Contacts from "../pages/client-dashboard/Contacts";
 // import Reminders from "../pages/client-dashboard/Reminders";
 import Support from "../pages/client-dashboard/Support";
 import Reminder from "../pages/client-dashboard/Reminder";
+import UpdateProfile from "../pages/client-dashboard/UpdateProfile";
 
 
 export const router = createBrowserRouter([
@@ -104,6 +105,10 @@ export const router = createBrowserRouter([
             {
                 path: '/client/pricing',
                 element: <Pricing/>
+            },
+            {
+                path: '/client/update-profile',
+                element: <UpdateProfile/>
             },
             {
               path: '/client/contact',

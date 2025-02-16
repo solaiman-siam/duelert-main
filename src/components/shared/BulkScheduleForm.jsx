@@ -1,11 +1,15 @@
 import { useState } from "react";
+import TemplatesDrawer from "./TemplatesDrawer";
 
 const BulkScheduleForm = () => {
   const [recipients, setRecipients] = useState(3);
+  const [open, setOpen] = useState(false);
 
   const handleBulkSubmit = (e) => {
     e.preventDefault();
-    console.log("Bulk Schedule");
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+    console.log(data);
   };
 
   return (
@@ -101,13 +105,23 @@ const BulkScheduleForm = () => {
             className="h-[200px] w-full px-5 py-4 rounded-lg border-[0.5px] border-[#5A5C5F]/50 outline-primary bg=[#F8F8F8]"
           ></textarea>
         </fieldset>
-        <button
-          type="submit"
-          className="text-lg font-semibold py-4 px-16 text-white bg-primary rounded-lg mt-8"
-        >
-          SUBMIT
-        </button>
+        <div className="flex gap-6">
+          <button
+            type="submit"
+            className="text-lg font-semibold py-4 px-16 text-white bg-primary rounded-lg mt-8"
+          >
+            SUBMIT
+          </button>
+          <button
+            type="button"
+            onClick={() => setOpen(true)}
+            className="text-lg font-semibold py-4 px-16 text-white bg-primary rounded-lg mt-8"
+          >
+            Template
+          </button>
+        </div>
       </form>
+      <TemplatesDrawer open={open} setOpen={setOpen} />
     </>
   );
 };

@@ -7,7 +7,7 @@ import RemainderReport from "../../components/shared/RemainderReport";
 function Reminder() {
   const buttons = ["Single Schedule", "Bulk Schedule", "Report"];
   const containerRef = useRef(null);
-  const [style, setStyle] = useState({ width: 0, left: 0 });
+  const [style, setStyle] = useState({ width: "159px", left: 0 });
   const [active, setActive] = useState(buttons[0]);
   
   // const [alignValue, setAlignValue] = useState("Single Schedule");
@@ -23,7 +23,7 @@ function Reminder() {
 
     console.log(active);
   return (
-    <div className="birthday-reminder">
+    <div className="birthday-reminder p-8">
       {/* <Segmented
         value={alignValue}
         style={{
