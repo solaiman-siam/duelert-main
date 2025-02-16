@@ -109,6 +109,7 @@ body {
 }
 .message-template-drawer .ant-drawer-body{
   padding: 50px 100px;
+  font-family: poppins;
 }
 
 /* rbc styles */
