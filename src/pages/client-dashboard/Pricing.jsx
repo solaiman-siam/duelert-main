@@ -99,7 +99,7 @@ function Pricing() {
   };
 
   return (
-    <div className=" rounded-md">
+    <div className="rounded-md py-8">
       <div className="flex items-center gap-8 justify-center">
         <h3 className="font-medium text-lg ">
           Sign Up And GET 2 Free SMS Messages

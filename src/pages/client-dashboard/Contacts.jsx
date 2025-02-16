@@ -204,8 +204,17 @@ function Contacts() {
   };
 
   return (
-    <div className="contacts-table">
-      <Table components={components} dataSource={dataSource} columns={columns}></Table>
+    <div className="contacts-table !font-poppins p-8">
+      <Table
+        components={components}
+        dataSource={dataSource}
+        columns={columns}
+        rowClassName={(record, index) =>
+          index % 2 === 0
+            ? " p-4  bg-white font-poppins text-[#404D61]"
+            : " text-[#404D61] bg-[#FFF0F2]  font-poppins"
+        }
+      ></Table>
     </div>
   );
 }

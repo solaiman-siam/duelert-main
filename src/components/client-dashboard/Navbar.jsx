@@ -1,4 +1,5 @@
 import { IoNotifications } from "react-icons/io5";
+import { Link } from "react-router";
 
 function Navbar({name}) {
   return (
@@ -8,7 +9,7 @@ function Navbar({name}) {
         <div className="cursor-pointer">
         <IoNotifications size={26} />
         </div>
-        <div className="flex items-center cursor-pointer gap-2">
+        <Link to="/client/update-profile" className="flex items-center cursor-pointer gap-2">
           <div className="flex flex-col ">
             <h3 className="font-semibold ">Connie Springer</h3>
             <h4 className="text-sm font-light">example@mail.com</h4>
@@ -16,7 +17,7 @@ function Navbar({name}) {
           <div className="w-12 h-12 rounded-full overflow-hidden ">
             <img className="w-full h-full object-cover" src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   )
