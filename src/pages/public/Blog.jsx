@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import blogImg from "../../assets/images/blog-banner.png";
 
 const Blog = () => {
   const blog = {
@@ -61,12 +62,13 @@ const Blog = () => {
                   className="card bg-white rounded-lg overflow-hidden"
                   key={idx}
                 >
-                  <figure className="w-full h-[200px] rounded-t-lg overflow-hidden">
+                  <figure className="w-full h-[200px] rounded-t-lg overflow-hidden relative">
                     <img
-                      src="https://i.ibb.co.com/pBwYMpJt/BLOG.png"
+                      src={blogImg}
                       className="h-full w-full object-cover object-center"
                       alt=""
                     />
+                    <p className="text-white bg-primary absolute top-4 left-0 px-3 py-2 rounded-tr-xl ">20 AUG ,2024</p>
                   </figure>
                   <div className="p-6">
                     <div className="w-[70%]">
