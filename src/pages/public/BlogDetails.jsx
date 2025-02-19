@@ -28,9 +28,9 @@ const BlogDetails = () => {
           className="overlay absolute top-0 left-0 h-full w-full opacity-0"
           style={{
             backgroundImage: "url('https://i.ibb.co/kkXsdyt/blog-overlay.png')",
-            "backgroundSize": "cover",
-            "backgroundPosition": "center",
-            "backgroundRepeat": "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
           }}
         ></div>
         <h1 className=" absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-white text-[96px] font-bold leading-[96px] uppercase">
@@ -53,7 +53,9 @@ const BlogDetails = () => {
             <div className="w-px bg-[#00000080]"></div>
             <p className="text-2xl">1 min ago</p>
           </div>
-          <h3 className="text-5xl mb-9 font-medium text-black001">{blog.title}</h3>
+          <h3 className="text-5xl mb-9 font-medium text-black001">
+            {blog.title}
+          </h3>
           <div className="flex items-center gap-12 mb-12">
             <p className="text-primaryDescription text-2xl">
               Data:{" "}
@@ -64,7 +66,7 @@ const BlogDetails = () => {
               <span className="text-[#050505] font-medium">{blog.time}</span>
             </p>
           </div>
-          <div className="text-2xl w-[80%] space-y-12 mb-[138px] text-black001">
+          <div className="text-lg w-3/4 space-y-12 mb-[138px] text-black001">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               ligula nibh, interdum non enim sit amet, iaculis aliquet nunc.
@@ -80,10 +82,22 @@ const BlogDetails = () => {
               posuere, ut rhoncus velit eleifend.
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              ligula nibh, interdum non enim sit amet, iaculis aliquet nunc.
+              Interdum non enim sit amet, iaculis aliquet nunc.
               Class aptent taciti sociosqu ad litora torquent per conubia
               nostra, per inceptos himenaeos. Aliquam sit amet ipsum ac velit
+              egestas ultrices. Vestibulum et neque id ex semper varius a sit
+              amet metus. Vivamus congue dolor eget aliquam hendrerit. Etiam
+              iaculis finibus egestas. Nam viverra urna quis odio efficitur
+              malesuada. Maecenas rhoncus enim eu scelerisque rutrum.
+            </p>
+            <p>
+              Pellentesque et mollis enim. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Curabitur sed commodo leo.
+              Pellentesque et mollis enim. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Curabitur sed commodo leo.
+            </p>
+            <p>
+              Nostra, per inceptos himenaeos. Aliquam sit amet ipsum ac velit
               egestas ultrices. Vestibulum et neque id ex semper varius a sit
               amet metus. Vivamus congue dolor eget aliquam hendrerit. Etiam
               iaculis finibus egestas. Nam viverra urna quis odio efficitur
@@ -98,12 +112,19 @@ const BlogDetails = () => {
               ligula nibh, interdum non enim sit amet, iaculis aliquet nunc.
               Class aptent taciti sociosqu ad litora torquent per conubia
               nostra, per inceptos himenaeos. Aliquam sit amet ipsum ac velit
-              egestas ultrices. Vestibulum et neque id ex semper varius a sit
-              amet metus. Vivamus congue dolor eget aliquam hendrerit. Etiam
-              iaculis finibus egestas. Nam viverra urna quis odio efficitur
-              malesuada. Maecenas rhoncus enim eu scelerisque rutrum.
-              Pellentesque et mollis enim. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Curabitur sed commodo leo.
+              egestas ultrices. Pellentesque et mollis enim. Lorem ipsum dolor
+              sit amet, consectetur adipiscing elit. Curabitur sed commodo leo.
+              Suspendisse potenti. Maecenas gravida ipsum placerat ligula
+              posuere, ut rhoncus velit eleifend.
+            </p>
+            <p>
+              Litora torquent per conubia nostra, per inceptos himenaeos.
+              Aliquam sit amet ipsum ac velit egestas ultrices. Vestibulum et
+              neque id ex semper varius a sit amet metus. Vivamus congue dolor
+              eget aliquam hendrerit. Etiam iaculis finibus egestas. Nam viverra
+              urna quis odio efficitur malesuada. Maecenas rhoncus enim eu
+              scelerisque rutrum. Pellentesque et mollis enim. Lorem ipsum dolor
+              sit amet, consectetur adipiscing elit. Curabitur sed commodo leo.
               Suspendisse potenti. Maecenas gravida ipsum placerat ligula
               posuere, ut rhoncus velit eleifend.
             </p>
