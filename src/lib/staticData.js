@@ -200,7 +200,7 @@ export const qnaData = [
   {
     "id": 2,
     "question": "How current is the data?",
-    "answer": "The data is regularly updated to ensure that it remains current and reflects the latest neighborhood trends and insights. The Areainsight platform aggregates and analyzes data from a variety of trusted and authoritative sources to provide comprehensive, up-to-date, and reliable neighborhood insights. The Areainsight platform aggregates and analyzes data from a variety of trusted and authoritative sources to provide comprehensive, up-to-date, and reliable neighborhood insights."
+    "answer": "The data is regularly updated to ensure that it remains current and reflects the latest neighborhood trends and insights. The Areainsight platform aggregates and analyzes data from a variety of trusted and authoritative sources to provide comprehensive, up-to-date, and reliable neighborhood insights."
   },
   {
     "id": 3,

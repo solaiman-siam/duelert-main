@@ -156,3 +156,19 @@ body {
 .rbc-event, .rbc-day-slot .rbc-background-event {
   background-color: #ff8396bb !important;
 }
+
+.notification-dropdown .ant-dropdown-menu {
+  padding: 8px !important;
+  border: 2px solid #f41435 !important;
+}
+.notification-dropdown .ant-dropdown-menu-item {
+  font-weight: 600 !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  color: black !important;
+  transition: all 0s ease !important;
+}
+.notification-dropdown .ant-dropdown-menu-item:hover {
+  background-color: #f41435 !important;
+  color: white !important;
+}

@@ -48,7 +48,7 @@ const Contact = () => {
         }}
       >
         <>
-          <div className="pb-32 max-w-[1720px] mx-auto flex gap-28">
+          <div className="pb-32 max-w-[1520px] mx-auto flex gap-28">
             <div className="left flex-1">
               <h2 className="text-5xl font-semibold text-black001 mb-4">
                 Say Hi!

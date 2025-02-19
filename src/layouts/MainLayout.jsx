@@ -3,20 +3,24 @@ import Navbar from "../components/shared/Navbar";
 import Footer from "../components/shared/Footer";
 
 function MainLayout() {
-
-
-  const location = useLocation().pathname
+  const location = useLocation().pathname;
 
   return (
     <div className="font-poppins ">
       <ScrollRestoration />
-      <nav className="">
-        <Navbar />
-      </nav>
-      <div className="pt-[93.61px]">
+      {location !== "/" && (
+        <nav className="">
+          <Navbar />
+        </nav>
+      )}
+      {location !== "/" ? (
+        <div className="pt-[93.61px]">
+          <Outlet />
+        </div>
+      ) : (
         <Outlet />
-      </div>
-      {location !== '/login' && location !== '/register' && <Footer />}
+      )}
+      {location !== "/login" && location !== "/register" && <Footer />}
     </div>
   );
 }

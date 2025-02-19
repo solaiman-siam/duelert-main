@@ -6,9 +6,11 @@ import CalenderBanner from "../../components/home-sections/CalenderBanner"
 
 import SubscribeBanner from "../../components/home-sections/SubscribeBanner"
 import PricingSection from "../../components/home-sections/PricingSection"
+import Navbar from "../../components/shared/Navbar"
 function Home() {
   return (
     <div className="">
+      <Navbar bg={"bg-transparent"} />
       <Hero/>
       <div className=" relative ">
       <WhyChooseUs/>
