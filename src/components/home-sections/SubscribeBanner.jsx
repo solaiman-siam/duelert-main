@@ -3,12 +3,12 @@ import Banner from "../../assets/images/subscribe-banner.png";
 
 function SubscribeBanner() {
   return (
-    <div className="relative flex justify-center items-center w-full h-[500px]">
-      <div className="absolute flex justify-center items-center flex-col z-[8]">
-        <h3 className="text-white text-3xl font-semibold w-7/12 text-center ">You can now make your customers feel on top of the world</h3>
-        <p className="text-white font-light  pt-4">
+    <div className="relative flex justify-center items-center w-full h-[500px] bg-transparent">
+      <div className="absolute w-full h-full flex justify-center items-center flex-col z-[8]">
+        <h3 className="text-white text-3xl font-semibold text-center ">You can now make your <br /> customers feel on top of the world</h3>
+        <p className="text-white font-light  pt-4 text-center">
           Join over 1,000+ businesses never missing important dates in their
-          users lives.
+          users <br /> lives.
         </p>
 
         <div className="pt-8 flex  items-center gap-4">

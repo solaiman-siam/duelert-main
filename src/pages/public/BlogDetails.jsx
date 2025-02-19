@@ -18,7 +18,6 @@ const BlogDetails = () => {
 
   return (
     <>
-      <div className="pt-28"></div>
       <figure className="w-full h-[740px] overflow-hidden relative">
         <img
           src="https://i.ibb.co.com/CpPSK8Kn/Blog-Details-Banner.png"
@@ -46,7 +45,7 @@ const BlogDetails = () => {
           backgroundSize: "cover",
         }}
       >
-        <div className="max-w-[1720px]  mx-auto ">
+        <div className="max-w-[1520px]  mx-auto ">
           <div className="breadcrumb text-black001 flex flex-row gap-4 mb-9">
             <p className="text-2xl">Author</p>
             <div className="w-px bg-[#00000080]"></div>

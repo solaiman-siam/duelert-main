@@ -46,7 +46,7 @@ const Blog = () => {
           backgroundSize: "cover",
         }}
       >
-        <div className="max-w-[1720px]  mx-auto ">
+        <div className="max-w-[1520px]  mx-auto ">
           <h2 className="text-center text-5xl font-semibold text-black001 mb-4">
             Blog Posts
           </h2>
