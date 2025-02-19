@@ -149,3 +149,10 @@ body {
 
 }
 
+.rbc-today {
+  background-color: #fae5e8 !important;
+}
+
+.rbc-event, .rbc-day-slot .rbc-background-event {
+  background-color: #ff8396bb !important;
+}

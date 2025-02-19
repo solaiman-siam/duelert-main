@@ -3,6 +3,11 @@ import  { useState } from "react";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
 
+import
+{ Modal }
+from
+"antd"
+;
 import "react-big-calendar/lib/css/react-big-calendar.css";
 
 const localizer = momentLocalizer(moment);
@@ -37,16 +42,53 @@ const Calender = () => {
     },
   ]);
 
+  const [open, setOpen] = useState(false);
+
+  const showModal = () => {
+    setOpen(true);
+  };
+
+  const handleOk = (e) => {
+    console.log(e);
+    setOpen(false);
+  };
+
+  const handleCancel = (e) => {
+    console.log(e);
+    setOpen(false);
+  };
+
   const allEvents = [...regularTasks, ...futureTasks];
 
   return (
-    <div className="App">
+    <div className="p-8 font-poppins">
+
+      <div className="pb-4" onClick={showModal}>
+        <button className="px-8 py-3 rounded-lg bg-primary text-white font-poppins font-medium ">Add Task</button>
+      </div>
+
+      <Modal
+        title="Add your task"
+        open={open}
+        onOk={handleOk}
+        onCancel={handleCancel}
+        okButtonProps={{ disabled: false }}
+        cancelButtonProps={{ disabled: false }}
+      >
+        <div className="flex flex-col gap-2 font-poppins">
+          <input type="date" name="" id="" />
+
+          <div className="pt-4 w-full">
+            <textarea className="w-full h-32 rounded-lg border px-4 py-2" name="" id=""></textarea>
+          </div>
+        </div>
+      </Modal>
       <Calendar
         localizer={localizer}
         defaultDate={new Date()}
         defaultView="month"
         events={allEvents}
-        style={{ height: "80vh" }}
+        style={{ height: "70vh" }}
       />
     </div>
   );

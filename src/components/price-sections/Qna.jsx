@@ -64,14 +64,14 @@ function Qna() {
                   key={qna.id}
                   header={
                     <h2
-                      className={`font-semibold font-inter text-xl py-4 px-2`}
-                    >{`${index + 1}.${qna?.question}`}</h2>
+                      className={`font-medium font-poppins font-inter text-xl py-4 px-2`}
+                    >{`${index + 1}. ${qna?.question}`}</h2>
                   }
                   className={`${qna.id == activeKey ? "bg-white" : "bg-transparent"} transition-all duration-300`}
                 >
                   <Typography.Text>
                     <div className="px-2 font-inter">
-                      <p className="font-medium  text-base">{qna?.answer}</p>
+                      <p className=" font-poppins  text-base">{qna?.answer}</p>
                     </div>
                   </Typography.Text>
                 </CollapsePanel>
