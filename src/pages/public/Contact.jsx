@@ -164,7 +164,7 @@ const Contact = () => {
                     </svg>
                     mailto:hello@creative-tim.com
                   </p>
-                  <p className=" inline-flex gap-3 items-center text-xl">
+                  {/* <p className=" inline-flex gap-3 items-center text-xl">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -178,7 +178,7 @@ const Contact = () => {
                       />
                     </svg>
                     Dyonisie Wolf Bucharest, RO 010458
-                  </p>
+                  </p> */}
                 </div>                                                                                                                                                          
               </div>
             </div>

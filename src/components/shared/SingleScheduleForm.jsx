@@ -13,11 +13,16 @@ const onChange = (date, dateString) => {
 
 const SingleScheduleForm = () => {
   const [open, setOpen] = useState(false);
+  const [presetTemplate, setPresetTemplate] = useState('')
 
   const handleSingleSchedule = (e) => {
     e.preventDefault();
     console.log("Single Schedule");
   };
+
+
+  console.log(presetTemplate);
+  
 
   return (
     <>
@@ -187,6 +192,7 @@ const SingleScheduleForm = () => {
               id="senderMessage"
               name="senderMessage"
               placeholder="Write here"
+              value={presetTemplate}
               className="h-[200px] w-full px-5 py-4 rounded-lg border-[0.5px] border-[#5A5C5F]/50 outline-primary bg=[#F8F8F8]"
             ></textarea>
           </fieldset>
@@ -207,7 +213,7 @@ const SingleScheduleForm = () => {
           </button>
         </div>
       </form>
-      <TemplatesDrawer open={open} setOpen={setOpen}/>
+      <TemplatesDrawer setPresetTemplate={setPresetTemplate} open={open} setOpen={setOpen}/>
     </>
   );
 };
