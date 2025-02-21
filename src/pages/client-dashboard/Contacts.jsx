@@ -209,6 +209,23 @@ function Contacts() {
         components={components}
         dataSource={dataSource}
         columns={columns}
+        pagination={{
+          position: ["bottomCenter"],
+          itemRender: (page, type) => {
+            if (type === "prev") {
+              return <button className="px-4 bg-primary font-poppins  rounded-md !text-white">← Prev</button>;
+            }
+            if (type === "next") {
+              return <button className="px-4 bg-primary !text-white font-poppins rounded-md ">Next →</button>;
+            }
+            return (
+              <button className="px-4 h-full flex justify-center items-center font-poppins outline-red-400 rounded">
+                {page}
+              </button>
+            );
+          },
+        }}
+        
         rowClassName={(record, index) =>
           index % 2 === 0
             ? " p-4  bg-white font-poppins text-[#404D61]"
